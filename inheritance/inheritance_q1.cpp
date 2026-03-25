@@ -9,7 +9,7 @@ float balance; int account_no ;
 public:
 account()
 {
-    account_no = 00000000;
+    account_no = 0000;
     balance = 00000000;
 }
 
