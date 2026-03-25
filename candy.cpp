@@ -79,11 +79,11 @@ int main()
     c1.displaycandy();
     c2.displaycandy();
     c1.loose_candy();
-    c2.loose_candy(5);
+    c2.loose_candy(1);
     c1.displaycandy();
     c2.displaycandy();
     c1.gain_candy();
-    c2.gain_candy(5);
+    c2.gain_candy(1);
     c1.displaycandy();
     c2.displaycandy();
 
