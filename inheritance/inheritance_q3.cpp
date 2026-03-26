@@ -1,53 +1,41 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Academic
 {
 public:
-
-void marks()
-{
-    cout<<"MARKS"<<endl;
-}
-
+    void marks()
+    {
+        cout << "MARKS" << endl;
+    }
 };
 
 class Sports
 {
 public:
-
-void score()
-{
-    cout<<"SCORE"<<endl;
-}
-
+    void score()
+    {
+        cout << "SCORE" << endl;
+    }
 };
 
-
-class Result: public Academic, public Sports
+class Result : public Academic, public Sports
 {
 public:
+    void display()
+    {
 
-void display()
-{
-
-    marks();
-    score();
-
-}
-
-
+        marks();
+        score();
+    }
 };
-
 
 int main()
 {
 
-Result r;
+    Result r;
 
-r.display();
+    r.display();
 
-return 0;
-
+    return 0;
 }
-

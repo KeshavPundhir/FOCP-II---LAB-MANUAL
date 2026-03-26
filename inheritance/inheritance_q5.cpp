@@ -1,50 +1,40 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Animal
 {
 public:
-
-void eat()
-{
-cout<<"\n Animals eat other animals !"<<endl;
-}
-
-
+    void eat()
+    {
+        cout << "\n Animals eat other animals !" << endl;
+    }
 };
 
 class Dog
 {
-public: 
-
-void bark()
-{
-cout<<"\n Dog barks on ghosts at night !"<<endl;
-}
-
+public:
+    void bark()
+    {
+        cout << "\n Dog barks on ghosts at night !" << endl;
+    }
 };
 
-class Puppy: public Animal,public Dog 
+class Puppy : public Animal, public Dog
 {
-    public :
-    
-void weep()
-{
-eat();
-bark();
-cout<<"\n weeping of puppies means ther are discomforted !"<<endl;
-
-}
-
+public:
+    void weep()
+    {
+        eat();
+        bark();
+        cout << "\n weeping of puppies means ther are discomforted !" << endl;
+    }
 };
 
-int main ()
+int main()
 {
-Puppy p;
+    Puppy p;
 
-p.weep();
-
+    p.weep();
 
     return 0;
 }
-

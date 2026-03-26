@@ -6,11 +6,11 @@ class Device
 public:
     void powerOn()
     {
-        cout << "\n power is on "<<endl;
+        cout << "\n power is on " << endl;
     }
 };
 
-class Computer:public Device
+class Computer : public Device
 {
 public:
     void process()
@@ -19,9 +19,9 @@ public:
     }
 };
 
-class Laptop:public Computer
+class Laptop : public Computer
 {
-    public:
+public:
     void carry()
     {
         cout << "\n Laptop is on and can be carried" << endl;
@@ -36,8 +36,6 @@ int main()
     obj.powerOn();
     obj.process();
     obj.carry();
-
-
 
     return 0;
 }

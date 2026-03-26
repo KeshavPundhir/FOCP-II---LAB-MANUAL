@@ -1,64 +1,51 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class space
 {
 protected:
-    float l,w,r;
+    float l, w, r;
+
 public:
-
-void draw(float ln,float wi,float radi)
-{
-l = ln;
-w = wi;
-r = radi;
-}
-
+    void draw(float ln, float wi, float radi)
+    {
+        l = ln;
+        w = wi;
+        r = radi;
+    }
 };
 
-
-
-class Circle:public space
+class Circle : public space
 {
 public:
+    void area()
+    {
 
-void area() 
-{
-    
-cout<<"area of circle is : "<<3.14*(r*r)<<endl;
-}
-
+        cout << "area of circle is : " << 3.14 * (r * r) << endl;
+    }
 };
 
-
-
-class Rectangle: public space
+class Rectangle : public space
 {
 public:
-
-void area()
-{
- cout<<"area of rectangle is : "<<l*w<<endl;
-}
-
+    void area()
+    {
+        cout << "area of rectangle is : " << l * w << endl;
+    }
 };
 
 int main()
 {
 
+    Circle c;
 
-Circle c;
+    c.draw(0, 0, 2);
+    c.area();
 
-c.draw(0,0,2);
-c.area();
+    Rectangle r;
 
-Rectangle r;
-
-r.draw(2,2,0);
-r.area();
-
-
+    r.draw(2, 2, 0);
+    r.area();
 
     return 0;
 }
-
